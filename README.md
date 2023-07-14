@@ -22,3 +22,4 @@ TEMPLATE_CONTEXT_PROCESSORS = (
     ...
     'django.template.context_processors.request',
 )
+Full doc here- > https://django-embed-video.readthedocs.io/en/latest/
