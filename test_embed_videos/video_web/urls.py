@@ -1,7 +1,7 @@
 from django.urls import path
 
-from test_embed_videos.video_web.views import index
+from test_embed_videos.video_web.views import home_page
 
 urlpatterns = (
-    path('', index, name='index'),
+    path('', home_page, name='home_page'),
 )

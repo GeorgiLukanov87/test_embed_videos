@@ -6,31 +6,29 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Videos</title>
+    <title>Document</title>
 </head>
 <body>
 
-<h1>videos</h1>
-
+{#The videos can be rendered in different sizes as follows:#}
+{##}
 {#tiny (420x315)#}
 {#small (480x360)#}
 {#medium (640x480)#}
 {#large (960x720)#}
 {#huge (1280x960)#}
+{#{% video Tut.tutorial_Video 'huge' %} can be used for huge videos.#}
+{##}
+{#We can also set custom dimensions for the video if the default ones does not fit our requirements. For#}
+{#example, {% video Tut.tutorial_Video '600x400' %}.#}
 
-<div>
-    <h1>test object.all</h1>
-    {% for item in videos %}
-        {% video item.url 'small' %}
-    {% endfor %}
 
-</div>
+<h1>Videos</h1>
+{% for item in videos %}
 
-<div>
-    <h1>test single video</h1>
-    {% video video2.url 'medium' %}
-    {% video video1.url 'medium' %}
-</div>
+    {% video item.url 'medium' %}
+
+{% endfor %}
 
 </body>
 </html>
