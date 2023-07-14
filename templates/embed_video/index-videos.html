@@ -13,12 +13,17 @@
 <h1>videos</h1>
 
 <div>
-
+    <h1>test object.all</h1>
     {% for item in videos %}
         {% video item.url '426x240' %}
-        {{ item.title }}
     {% endfor %}
 
+</div>
+
+<div>
+    <h1>test single video</h1>
+    {% video video2.url '426x240' %}
+    {% video video1.url '426x240' %}
 </div>
 
 </body>
